@@ -1,0 +1,62 @@
+[project]
+name = "bitroom"
+version = "0.1.2"
+description = "BIT 场地预约查询接口（bitroom）"
+authors = [
+    {name = "Y.D.X.", email = "73375426+YDX-2147483647@users.noreply.github.com"},
+]
+dependencies = [
+    "PyExecJS>=1.5.1",
+    "httpx>=0.24.0",
+    "click>=8.1.3",
+    "platformdirs>=3.5.0",
+    'tomli>=2.0.1; python_version < "3.11"',
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Environment :: Console",
+    "Framework :: AsyncIO",
+    "Topic :: Home Automation",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/YDX-2147483647/bitroom"
+Repository = "https://github.com/YDX-2147483647/bitroom"
+"Bug Tracker" = "https://github.com/YDX-2147483647/bitroom/issues"
+
+[project.scripts]
+bitroom = "bitroom.cli:cli"
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.ruff]
+select = [
+    "E",  # pycodestyle errors
+    "W",  # pycodestyle warnings
+    "F",  # Pyflakes
+    "I",  # isort
+    "N",  # pep8-naming
+]
+line-length = 88  # Same as black
+ignore-init-module-imports = true
+
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = [
+]
+
+[tool.pdm.scripts]
+lint = "pre-commit run --all-files"

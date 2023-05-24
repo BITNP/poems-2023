@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/">
+        <file>1/2.JPG</file>
+        <file>1/3.JPG</file>
+        <file>1/1.png</file>
+        <file>1/2.png</file>
+        <file>1/3.png</file>
+        <file>1/4.JPG</file>
+        <file>1/4.png</file>
+        <file>1/background.png</file>
+        <file>1/PB1.png</file>
+        <file>1/PB2.png</file>
+        <file>1/PB3.png</file>
+        <file>1/background1.png</file>
+        <file>1/background2.png</file>
+        <file>1/start_background.png</file>
+        <file>1/star0.png</file>
+        <file>1/title.png</file>
+        <file>1/11.png</file>
+        <file>1/star1.png</file>
+        <file>1/star2.png</file>
+        <file>1/buttom1.png</file>
+        <file>1/backgif.gif</file>
+    </qresource>
+</RCC>
